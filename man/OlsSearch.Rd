@@ -164,7 +164,8 @@ tg3 <- OlsSearch(q = "trans-golgi", rows = 10, start = 0) |>
 
 ## The two consecutive small results are identical
 ## to the larger on.
-identical(rbind(tg1, tg2), tg3)
+cols <- intersect(intersect(names(tg1), names(tg2)), names(tg3))
+identical(rbind(tg1[cols], tg2[cols]), tg3[cols])
 }
 \references{
 - OLS3 API (the OLS4 API should function identically to the OLS3):
