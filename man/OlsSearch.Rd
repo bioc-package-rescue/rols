@@ -159,9 +159,8 @@ tg3 <- OlsSearch(q = "trans-golgi", rows = 10, start = 0) |>
                  olsSearch() |>
                  as("data.frame")
 
-## The two consecutive small results are identical
-## to the larger on.
-identical(rbind(tg1, tg2), tg3)
+## Compare row counts of combined small results with the larger one
+(nrow(tg1) + nrow(tg2)) == nrow(tg3)
 }
 \references{
 - OLS3 API (the OLS4 API should function identically to the OLS3):
