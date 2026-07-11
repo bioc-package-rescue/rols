@@ -172,6 +172,7 @@ NULL
 ##########################################
 ## Constructors
 
+##' @return An object of class Ontologies.
 ##' @export
 ##'
 ##' @param object an instance of class `olsOntologies` or `olsOntology`. For

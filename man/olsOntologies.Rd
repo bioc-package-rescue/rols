@@ -175,6 +175,9 @@ of `X`.}
 
 \item{drop}{ignored.}
 }
+\value{
+An object of class Ontologies.
+}
 \description{
 The rols package provides an interface to PRIDE's Ontology Lookup
 Servive (OLS) and can be used to query one or multiple ontologies,

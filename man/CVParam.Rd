@@ -40,6 +40,9 @@ match.}
 
 \item{times}{`numeric(1)` defining the number of repetitions.}
 }
+\value{
+An object of class CVParam.
+}
 \description{
 `CVParam` objects instantiate controlled vocabulary entries.
 }

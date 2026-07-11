@@ -41,6 +41,7 @@ NULL
 
 ##########################################
 ## Constructors
+##' @return An object of class Properties.
 ##' @export
 ##' @rdname olsProperties
 ##'

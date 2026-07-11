@@ -36,6 +36,9 @@
 
 \item{x}{A `olsProperties` object.}
 }
+\value{
+An object of class Properties.
+}
 \description{
 Properties (relationships) between terms can be queries for
 complete [olsOntology()] objects and [olsTerm()]/[olsTerms()]

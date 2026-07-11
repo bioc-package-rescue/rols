@@ -27,8 +27,8 @@ test_that("OlsSearch rows", {
     res <- allRows(res)
     expect_equal(olsRows(res), res@numFound)
 
-    res <- olsSearch(res) ## max is 1000
-    expect_equal(nrow(res@response), 1000)
+    res <- olsSearch(res) ## max was 1000 on OLS3, but OLS4 can return more
+    expect_true(nrow(res@response) >= 1000)
 })
 
 test_that("OlsSearch coercion", {

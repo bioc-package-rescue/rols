@@ -164,6 +164,7 @@ NULL
 ##########################################
 ## Constructors
 
+##' @return An object of class Terms.
 ##' @export
 ##' @rdname olsTerms
 ##'
