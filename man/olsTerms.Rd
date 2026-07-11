@@ -172,6 +172,9 @@ default) should be returned.}
 
 \item{...}{additional arguments passed to `FUN`.}
 }
+\value{
+An object of class Terms.
+}
 \description{
 The `olsTerm` class describes an ontology term. A set of terms are
 instantiated as a `olsTerms` class.

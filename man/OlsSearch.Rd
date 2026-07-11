@@ -97,6 +97,9 @@ number. Default is 0L.}
 
 \item{value}{replacement value}
 }
+\value{
+An object of class OlsSearch.
+}
 \description{
 Searching the Ontology Lookup Service is done first by creating an
 object `OlsSearch` using the `OlsSearch()` constructor. Query
@@ -159,8 +162,9 @@ tg3 <- OlsSearch(q = "trans-golgi", rows = 10, start = 0) |>
                  olsSearch() |>
                  as("data.frame")
 
-## Compare row counts of combined small results with the larger one
-(nrow(tg1) + nrow(tg2)) == nrow(tg3)
+## The two consecutive small results are identical
+## to the larger on.
+identical(rbind(tg1, tg2), tg3)
 }
 \references{
 - OLS3 API (the OLS4 API should function identically to the OLS3):

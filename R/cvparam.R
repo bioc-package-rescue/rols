@@ -122,6 +122,7 @@ trim <- function (x) gsub("^\\s+|\\s+$", "", x)
 ##'     the `accession` (when `name` is used) should be an exact
 ##'     match.
 ##'
+##' @return An object of class CVParam.
 ##' @export
 ##' @rdname CVParam
 CVParam <- function(label,

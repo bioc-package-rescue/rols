@@ -104,6 +104,7 @@
 ##########################################
 ## Constructor
 
+##' @return An object of class OlsSearch.
 ##' @export
 ##'
 ##' @rdname OlsSearch
